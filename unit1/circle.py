@@ -6,3 +6,6 @@ print("Area: ", round(area,2))
 
 circumference = 2 * math.pi * radius
 print("Circumference: ", round(circumference,2))
+
+name = "Mery"
+name.
