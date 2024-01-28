@@ -1,30 +1,22 @@
-#asking for input for the full name
-name = input("Enter full name: ")
-
-#extract first letter of full name [0]
-first = name[0]
-
-#convert to capital case and print
-print(first.upper())
-
-#create a var that holds the index of space
-index = name.find(" ")
-
-#create a new text that starts at space until the end
-middleUp = name[index+1:]
-
-#create a var that holds the second space
-index2 = middleUp.find(" ")
-
-#create a var that holds the middle name
-middleName = middleUp[0:index2-1]
-
-#extract the middle character
-
-#print in capital letter
-
-#variable that holds the length of full name
-
-#extract the letter at lenght -1
-
-#print as capital
+#read full name as an input
+name = input("Write your Full Name: ")
+#create a new variable with a substring for index [0]
+first_letter = name[0]
+#convert to capital letter and print the first letter
+print(first_letter.upper())
+#create a new variable that holds the index of the first space
+indexSpace = name.find(" ")
+#create a new text that starts at space+1 and goes until the end
+middleup = name[indexSpace+1:]  #johanna tellez
+#create a var that finn the space on the new text
+indexspace2 = middleup.find(" ")  #7
+#create a var that holds the middle name (sub string from 0, space)
+middle_name = middleup[0:indexspace2]  #johanna
+#create a var that holds the index of the middle of the lenght of middle name
+middle_letter = len(middle_name) // 2  #3
+#convert to capital and print the middle letter at that index
+print(middle_name[middle_letter].upper()) # a
+#create a var and calculate the lenght of full name
+length = len(name)  #19
+#convert to upper and print the letter at position len-1
+print(name[length -1].upper())
